@@ -1,4 +1,4 @@
-﻿using FactoryMethod.Vehicles;
+﻿using FactoryMethod.Veiculos;
 
 namespace FactoryMethod.Factories
 {
@@ -6,9 +6,9 @@ namespace FactoryMethod.Factories
     {
         public void IniciarTransporte()
         {
-            IVeiculo vehicle = CriarTransporte();
+            IVeiculo veiculo = CriarTransporte();
 
-            vehicle.IniciarRota();
+            veiculo.IniciarRota();
         }
 
         protected abstract IVeiculo CriarTransporte();

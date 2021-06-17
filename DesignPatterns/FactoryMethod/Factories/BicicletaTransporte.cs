@@ -1,4 +1,4 @@
-﻿using FactoryMethod.Vehicles;
+﻿using FactoryMethod.Veiculos;
 
 namespace FactoryMethod.Factories
 {

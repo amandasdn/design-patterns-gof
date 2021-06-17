@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace FactoryMethod.Vehicles
+namespace FactoryMethod.Veiculos
 {
-    public class Bicicleta : IVeiculo
+    public class Moto : IVeiculo
     {
         public void ObterCarga()
         {
@@ -11,11 +11,11 @@ namespace FactoryMethod.Vehicles
 
         public void IniciarRota()
         {
-            Console.WriteLine($"[{nameof(Bicicleta)}]");
+            Console.WriteLine($"[{nameof(Moto)}]");
 
             ObterCarga();
 
-            Console.WriteLine("Iniciando o trajeto.");
+            Console.WriteLine("Iniciando a entrega.");
         }
     }
 }

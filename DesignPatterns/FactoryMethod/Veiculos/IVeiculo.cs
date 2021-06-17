@@ -1,4 +1,4 @@
-﻿namespace FactoryMethod.Vehicles
+﻿namespace FactoryMethod.Veiculos
 {
     interface IVeiculo
     {

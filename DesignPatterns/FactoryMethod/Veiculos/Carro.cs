@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FactoryMethod.Vehicles
+namespace FactoryMethod.Veiculos
 {
     public class Carro : IVeiculo
     {
