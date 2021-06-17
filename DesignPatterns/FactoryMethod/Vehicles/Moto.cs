@@ -2,18 +2,18 @@
 
 namespace FactoryMethod.Vehicles
 {
-    public class Motorcycle : IVehicle
+    public class Moto : IVeiculo
     {
-        public void GetCargo()
+        public void ObterCarga()
         {
             Console.WriteLine("Pegamos a encomenda.");
         }
 
-        public void StartRoute()
+        public void IniciarRota()
         {
-            Console.WriteLine($"[{nameof(Motorcycle)}]");
+            Console.WriteLine($"[{nameof(Moto)}]");
 
-            GetCargo();
+            ObterCarga();
 
             Console.WriteLine("Iniciando a entrega.");
         }

@@ -9,28 +9,28 @@ namespace FactoryMethod
         static void Main(string[] args)
         {
             #if DEBUG
-            args = new string[] { TransportType.Motorcycle };
+            args = new string[] { TipoTransporte.Moto };
             #endif
 
-            Transport transport = null;
+            Transporte transporte = null;
 
             if (args.Length > 0)
             {
-                transport = args[0] switch
+                transporte = args[0] switch
                 {
-                    TransportType.Car => new CarTransport(),
-                    TransportType.Motorcycle => new MotorcycleTransport(),
-                    TransportType.Bicycle => new BicycleTransport(),
+                    TipoTransporte.Carro => new CarroTransporte(),
+                    TipoTransporte.Moto => new MotoTransporte(),
+                    TipoTransporte.Bicicleta => new BicicletaTransporte(),
                     _ => null
                 };
 
-                if (transport == null)
+                if (transporte == null)
                 {
                     Console.WriteLine("Selecione um serviço válido.");
                 }
                 else
                 {
-                    transport.StartTransport();
+                    transporte.IniciarTransporte();
                 }
             }
             else

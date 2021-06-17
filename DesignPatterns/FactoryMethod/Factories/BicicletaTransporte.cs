@@ -2,11 +2,11 @@
 
 namespace FactoryMethod.Factories
 {
-    class MotoTransporte : Transporte
+    class BicicletaTransporte : Transporte
     {
         protected override IVeiculo CriarTransporte()
         {
-            return new Moto();
+            return new Bicicleta();
         }
     }
 }
